@@ -1,6 +1,5 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { AuthProvider } from './core/providers/context/AuthContext';
 import { ModalProvider } from './core/providers/context/ModalContext';
 import RootLayout from './features/layout/RootLayout';
 import Main from './pages/main/MainContent.tsx';
@@ -8,11 +7,11 @@ import RoadmapPreview from './features/roadmap/RoadmapPreview.tsx';
 import EditProfile from "./features/profile/EditProfile.tsx";
 import {store} from './core/store/store.ts'
 import {Provider} from "react-redux";
+
 const App: React.FC = () => {
     return (
         <Provider store={store}>
             <ModalProvider>
-                <AuthProvider>
                     <BrowserRouter>
                         <Routes>
                             <Route path="/" element={<RootLayout />}>
@@ -44,7 +43,6 @@ const App: React.FC = () => {
                             </Route>
                         </Routes>
                     </BrowserRouter>
-                </AuthProvider>
             </ModalProvider>
         </Provider>
     );

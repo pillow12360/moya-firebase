@@ -2,7 +2,6 @@ import React from 'react';
 import { Menu, Home, Book, User, ChevronDown, MessageCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import NavItem from './NavItem.tsx';
-import { useAuth } from '@providers/context/AuthContext.tsx';
 
 // 네비게이션 아이템 설정
 const navigationItems = [
@@ -31,7 +30,7 @@ const authNavigationItems = [
 ];
 
 const Header: React.FC = () => {
-    const { isLoggedIn } = useAuth();
+    const  isLoggedIn = true;
 
     return (
         <header className="bg-white border-b border-moya-primary/10 fixed w-full top-0 z-50">

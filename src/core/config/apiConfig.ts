@@ -34,7 +34,6 @@ export const axiosInstance = axios.create({
     withCredentials: true,
 });
 
-
 // 인증 관련 API
 export const AUTH_API = {
 
