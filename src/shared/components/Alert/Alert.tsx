@@ -1,6 +1,6 @@
 import React from 'react';
 import { AlertCircle, CheckCircle2, Info, XCircle } from 'lucide-react';
-import { cn } from '@/utils/cn';
+import { cn } from '@utils/cn';
 
 export type AlertType = 'success' | 'error' | 'warning' | 'info';
 

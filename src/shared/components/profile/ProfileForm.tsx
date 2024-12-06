@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { User, School, Code } from 'lucide-react';
 
-// Constants
 const POSITIONS = ['프론트엔드', '백엔드', '풀스택', '데브옵스', '모바일'] as const;
 const YEARS = ['0년', '1년', '2년', '3년', '4년', '5년 이상'] as const;
 
