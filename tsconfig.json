@@ -24,7 +24,6 @@
       "@pages/*": ["src/pages/*"],
       "@shared/*": ["src/shared/*"],
       "@styles/*": ["src/styles/*"],
-      "@types/*": ["src/core/types/*"],
       "@store/*": ["src/core/store/*"],
       "@config/*": ["src/core/config/*"]
     }

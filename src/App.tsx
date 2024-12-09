@@ -5,7 +5,7 @@ import RootLayout from './features/layout/RootLayout';
 import Main from './pages/main/MainContent.tsx';
 import RoadmapPreview from './features/roadmap/RoadmapPreview.tsx';
 import EditProfile from "./features/profile/EditProfile.tsx";
-import {store} from './core/store/store.ts';
+import {store} from './core/store/store.ts'
 import {Provider} from "react-redux";
 
 const App: React.FC = () => {
